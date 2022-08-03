@@ -1,6 +1,7 @@
 ﻿using Bin2Dec.DTO;
 using Bin2Dec.Services;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace Bin2Dec.Controllers
 {
