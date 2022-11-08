@@ -18,7 +18,15 @@ namespace Bin2Dec.Controllers
         [HttpPost]
         public ActionResult<int> Converter(ConverterDTO dto)
         {
-            return Ok(this.service.Converter(dto));
+            try
+            {
+                return Ok(this.service.Converter(dto));
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+            
         }
     }
 }
